@@ -1,6 +1,6 @@
 ! Title: LINE DNS filter
 ! Description: DNS filtering rules for selected LINE services and content.
-! Version: 1.3.3
+! Version: 1.3.4
 ! Expires: 1 day
 ! License: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -8,6 +8,8 @@
 ||ad.line-scdn.net^
 ! Experimental: verify ad/news image impact and normal LINE image loading on iOS.
 ||wcc-image.line-scdn.net^
+! Experimental: verify news reload; may also block other Home assets.
+||home-assets.line-scdn.net^
 ! Experimental: shared LINE gateway; may disrupt messaging and other core features.
 ||legy-jp.line-apps.com^
 ||linecrs.line-scdn.net^
