@@ -1,4 +1,4 @@
-! Title: LINE DNS Filter
+! Title: LINE DNS filter
 ! Description: DNS filtering rules for selected LINE services and content.
 ! Version: 1.2.0
 ! Expires: 1 day
