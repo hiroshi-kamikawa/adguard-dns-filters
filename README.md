@@ -4,7 +4,7 @@ DNS filtering rules for selected LINE services and content.
 
 ## Filters
 
-- [line.txt](line.txt): Blocks `legy-jp.line-apps.com`, selected advertising and analytics endpoints, and candidate NEWS, VOOM, and OpenChat endpoints.
+- [line.txt](line.txt): Blocks `legy-jp.line-apps.com` and `legy-backup.line-apps.com`, selected advertising and analytics endpoints, and candidate NEWS, VOOM, and OpenChat endpoints.
 
 The advertising and analytics rules and the `oa.tr.line.me` exception are also present in the [AdGuard DNS filter](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt). Their inclusion does not establish device-level compatibility. The NEWS, VOOM, and OpenChat candidates may block entire features or their media; their effects have not yet been verified on a device.
 
@@ -18,7 +18,7 @@ Use the **AdGuard** DNS implementation for local filtering. These rules can also
 
 ## Limitations
 
-The user reported an effect when mitmproxy returned HTTP 403 for `legy-jp.line-apps.com` alone. DNS blocking behavior and normal LINE functionality have not yet been verified. This shared gateway may affect messaging and other core features.
+During an iPhone test through mitmproxy WireGuard mode, the user observed requests to `legy-backup.line-apps.com` after DNS blocking `legy-jp.line-apps.com`. The user reported the intended display effect after both hosts returned NXDOMAIN. The updated list has not yet been verified in AdGuard Pro, and normal LINE functionality remains unverified. Blocking these shared gateways may affect messaging and other core features.
 
 DNS filtering blocks domains, not individual page elements. Some content may remain, and shared domains may affect other LINE features.
 
