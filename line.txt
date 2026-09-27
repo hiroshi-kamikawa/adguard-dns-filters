@@ -1,49 +1,30 @@
 ! Title: LINE DNS filter
 ! Description: DNS filtering rules for selected LINE services and content.
-! Version: 1.3.7
+! Version: 1.3.8
 ! Expires: 1 day
 ! License: https://www.gnu.org/licenses/gpl-3.0.html
 
+||legy-jp.line-apps.com^
 ||a.line.me^
 ||ad.line-scdn.net^
-! Experimental: verify ad/news image impact and normal LINE image loading on iOS.
-||wcc-image.line-scdn.net^
-! Experimental: verify news reload; may also block other Home assets.
-||home-assets.line-scdn.net^
-! Experimental: purpose unconfirmed; verify news and normal Home rendering.
-||line-home.line-scdn.net^
-! Experimental: observed home-contents video request; verify impact on iOS.
-||line-home.flvcdn.net^
-! Experimental: shared asset CDN; may affect images and other LINE content.
-||vos.line-scdn.net^
-! Experimental: shared LINE gateway; may disrupt messaging and other core features.
-||legy-jp.line-apps.com^
-||linecrs.line-scdn.net^
+||im.c.yimg.jp^
+||crs-event.line.me^
+||crs-hometab-event.line.me^
+||analytics-conomi.line.me^
+||ts.line-apps.com^
+||log-music-data.line-apps.com^
+||nelo2-col.linecorp.com^
+||tr.line.me^
+@@||oa.tr.line.me^|
+||ch-news.line-apps.com^
+||news.line-apps.com^
+||news.line.me^
+||news-api.line.me^
+||news-obs.line-scdn.net^
 ||linevoom.line.me^
 ||voom.line.me^
 ||timeline.line.me^
 ||voom-assets.line-scdn.net^
 ||voom-obs.line-scdn.net^
 ||cac-linevoom.line.me.line-zero.akadns.net^
-||ch-news.line-apps.com^
-||news.line-apps.com^
-||news.line.me^
-||news-api.line.me^
-||news-obs.line-scdn.net^
 ||square-api.line.me^
-||obs.line-scdn.net^
-||scdn.line-apps.com^
-||gw.line.naver.jp^
-||im.c.yimg.jp^
-||crs-event.line.me^
-||crs-hometab-event.line.me^
-||line-apps.com.akadns.net^
-||jp-col-tcp.nelo.linecorp.com^
-||analytics-conomi.line.me^
-||ts.line-apps.com^
-||log-music-data.line-apps.com^
-||nelo2-col.linecorp.com^
-||ly.my.sentry.io^
-||uts-front.line-apps.com^
-||tr.line.me^
-@@||oa.tr.line.me^|
